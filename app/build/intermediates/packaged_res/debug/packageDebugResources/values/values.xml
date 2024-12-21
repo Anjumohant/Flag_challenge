@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="button_bg">#FF7043</color>
+    <color name="crrectoption_color">#01C414</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="primary_color">#FF7043</color>
+    <color name="transparent">#05000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="wrongtext">#FF0000</color>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Flags_Challenge</string>
+    <string name="challenge">CHALLENGE</string>
+    <string name="challenge_start">WILL START IN</string>
+    <string name="correct">Correct</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="question">Guess the Country by the Flag</string>
+    <string name="save_time">Save</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="wrong">Wrong</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

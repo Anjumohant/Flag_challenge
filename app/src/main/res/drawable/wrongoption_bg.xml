@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Fill Color -->
+    <solid android:color="#FF7043" /> <!-- Replace with your desired fill color -->
+
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />
+    <corners android:radius="8dp" />
+</shape>
