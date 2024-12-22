@@ -29,19 +29,20 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.flags_challenge.ui.challenge.ChallengeActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.flags_challenge.ui.time_picker.Schedule_TimerActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.flags_challenge.ui.common.SplashActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme" >
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.flags_challenge.ui.time_picker.Schedule_TimerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.flags_challenge.ui.common.SplashActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" >
         </activity>
         <activity
             android:name="com.example.flags_challenge.ui.time_picker.TimePickerActivity"

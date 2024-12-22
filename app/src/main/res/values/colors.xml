@@ -7,4 +7,5 @@
     <color name="transparent">#05000000</color>
     <color name="wrongtext">#FF0000</color>
    <color name="primary_color">#FF7043</color>
+    <color name="grey">#AAA5A5</color>
 </resources>

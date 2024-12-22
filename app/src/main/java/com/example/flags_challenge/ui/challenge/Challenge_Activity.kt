@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -33,9 +34,10 @@ class ChallengeActivity : AppCompatActivity() {
     private lateinit var option3Result:TextView
     private lateinit var option4Result: TextView
     private lateinit var timerTextview:TextView
-private lateinit var cardview:CardView
+//private lateinit var flagimageview:ImageView
 private lateinit var game_over:TextView
 private lateinit var score:TextView
+private lateinit var option: LinearLayout
 
 
     private var currentQuestionIndex = 0
@@ -52,7 +54,6 @@ private lateinit var score:TextView
 
         // Initialize UI components
         questionTextView = findViewById(R.id.questionNumberText)
-        flagImageView = findViewById(R.id.flagImageView)
         option1Button = findViewById(R.id.option1Button)
         option2Button = findViewById(R.id.option2Button)
         option3Button = findViewById(R.id.option3Button)
@@ -62,7 +63,8 @@ private lateinit var score:TextView
         option3Result=findViewById(R.id.option3Result)
         option4Result=findViewById(R.id.option4Result)
         timerTextview=findViewById(R.id.timerTextView)
-        cardview=findViewById(R.id.card_view)
+        flagImageView=findViewById(R.id.flagImageView)
+        option=findViewById(R.id.options)
         game_over=findViewById(R.id.game_over)
         score=findViewById(R.id.score)
         // Observe the LiveData for questions
@@ -70,7 +72,8 @@ private lateinit var score:TextView
             questionsList = questions
             displayQuestion(currentQuestionIndex)
         })
-
+        game_over.visibility=View.GONE
+        score.visibility=View.GONE
         // Set up button clicks for options
         option1Button.setOnClickListener {
             if (!isAnswerChecked) selectedOption=1
@@ -94,13 +97,6 @@ private lateinit var score:TextView
         val question = questionsList[questionIndex]
         questionTextView.text = "${questionIndex + 1}"
 
-        // Set flag image (Placeholder for now, set it dynamically in real case)
-        val flagResId = resources.getIdentifier(
-            "flag_${question.country_code.toLowerCase()}",
-            "drawable",
-            packageName
-        )
-        flagImageView.setImageResource(flagResId)
 
         // Set option texts
         option1Button.text = question.countries[0].country_name
@@ -173,8 +169,11 @@ if (selectedOption!=0) {
         if (currentQuestionIndex < questionsList.size) {
             // Show next question after 10 seconds
             displayQuestion(currentQuestionIndex)
+
         } else {
-cardview.visibility=View.GONE
+            flagImageView.visibility=View.GONE
+           // cardview.visibility=View.GONE
+            option.visibility=View.GONE
             game_over.visibility=View.VISIBLE
             score.visibility=View.VISIBLE
             score.text="Score: $correctAnswers/${questionsList.size}"
@@ -208,10 +207,7 @@ cardview.visibility=View.GONE
         option2Button.setBackgroundColor(resources.getColor(R.color.transparent))
         option3Button.setBackgroundColor(resources.getColor(R.color.transparent))
         option4Button.setBackgroundColor(resources.getColor(R.color.transparent))
-//        option1Button.text = "Option 1"
-//        option2Button.text = "Option 2"
-//        option3Button.text = "Option 3"
-//        option4Button.text = "Option 4"
+
         option1Result.visibility=View.GONE
         option2Result.visibility=View.GONE
         option3Result.visibility=View.GONE

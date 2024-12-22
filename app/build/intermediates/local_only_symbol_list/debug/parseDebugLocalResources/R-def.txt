@@ -3,6 +3,7 @@ local
 color black
 color button_bg
 color crrectoption_color
+color grey
 color ic_launcher_background
 color primary_color
 color transparent
@@ -12,6 +13,7 @@ dimen dimen_10dp
 dimen fab_margin
 drawable app_icon
 drawable button_bg
+drawable button_bg_option
 drawable correctoption_bg
 drawable gradient_timer_bg
 drawable ic_launcher_background
@@ -28,9 +30,8 @@ id action_settings
 id appName
 id fab
 id flagImageView
-id flag_image
+id game_over
 id headerText
-id header_timer
 id hourPicker
 id iv_splash_screen
 id main
@@ -46,11 +47,14 @@ id option4Button
 id option4Result
 id options
 id questionNumberText
+id questionText
 id saveButton
+id score
 id secondPicker
-id textView
 id timerTextView
+id titleText
 id toolbar
+id topBar
 id tv_challenge
 id tv_timer
 id tv_timer_message

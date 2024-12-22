@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="button_bg">#FF7043</color>
     <color name="crrectoption_color">#01C414</color>
+    <color name="grey">#AAA5A5</color>
     <color name="ic_launcher_background">#FFFFFF</color>
     <color name="primary_color">#FF7043</color>
     <color name="transparent">#05000000</color>

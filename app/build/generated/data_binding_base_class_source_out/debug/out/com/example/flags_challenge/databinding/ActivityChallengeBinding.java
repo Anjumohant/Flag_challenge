@@ -23,16 +23,10 @@ public final class ActivityChallengeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final LinearLayout flagImage;
-
-  @NonNull
   public final ImageView flagImageView;
 
   @NonNull
-  public final TextView headerText;
-
-  @NonNull
-  public final ConstraintLayout headerTimer;
+  public final TextView gameOver;
 
   @NonNull
   public final Button option1Button;
@@ -65,25 +59,31 @@ public final class ActivityChallengeBinding implements ViewBinding {
   public final TextView questionNumberText;
 
   @NonNull
-  public final TextView textView;
+  public final TextView questionText;
+
+  @NonNull
+  public final TextView score;
 
   @NonNull
   public final TextView timerTextView;
 
+  @NonNull
+  public final TextView titleText;
+
+  @NonNull
+  public final View topBar;
+
   private ActivityChallengeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull LinearLayout flagImage, @NonNull ImageView flagImageView,
-      @NonNull TextView headerText, @NonNull ConstraintLayout headerTimer,
-      @NonNull Button option1Button, @NonNull TextView option1Result, @NonNull Button option2Button,
+      @NonNull ImageView flagImageView, @NonNull TextView gameOver, @NonNull Button option1Button,
+      @NonNull TextView option1Result, @NonNull Button option2Button,
       @NonNull TextView option2Result, @NonNull Button option3Button,
       @NonNull TextView option3Result, @NonNull Button option4Button,
       @NonNull TextView option4Result, @NonNull LinearLayout options,
-      @NonNull TextView questionNumberText, @NonNull TextView textView,
-      @NonNull TextView timerTextView) {
+      @NonNull TextView questionNumberText, @NonNull TextView questionText, @NonNull TextView score,
+      @NonNull TextView timerTextView, @NonNull TextView titleText, @NonNull View topBar) {
     this.rootView = rootView;
-    this.flagImage = flagImage;
     this.flagImageView = flagImageView;
-    this.headerText = headerText;
-    this.headerTimer = headerTimer;
+    this.gameOver = gameOver;
     this.option1Button = option1Button;
     this.option1Result = option1Result;
     this.option2Button = option2Button;
@@ -94,8 +94,11 @@ public final class ActivityChallengeBinding implements ViewBinding {
     this.option4Result = option4Result;
     this.options = options;
     this.questionNumberText = questionNumberText;
-    this.textView = textView;
+    this.questionText = questionText;
+    this.score = score;
     this.timerTextView = timerTextView;
+    this.titleText = titleText;
+    this.topBar = topBar;
   }
 
   @Override
@@ -125,27 +128,15 @@ public final class ActivityChallengeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.flag_image;
-      LinearLayout flagImage = ViewBindings.findChildViewById(rootView, id);
-      if (flagImage == null) {
-        break missingId;
-      }
-
       id = R.id.flagImageView;
       ImageView flagImageView = ViewBindings.findChildViewById(rootView, id);
       if (flagImageView == null) {
         break missingId;
       }
 
-      id = R.id.headerText;
-      TextView headerText = ViewBindings.findChildViewById(rootView, id);
-      if (headerText == null) {
-        break missingId;
-      }
-
-      id = R.id.header_timer;
-      ConstraintLayout headerTimer = ViewBindings.findChildViewById(rootView, id);
-      if (headerTimer == null) {
+      id = R.id.game_over;
+      TextView gameOver = ViewBindings.findChildViewById(rootView, id);
+      if (gameOver == null) {
         break missingId;
       }
 
@@ -209,9 +200,15 @@ public final class ActivityChallengeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.questionText;
+      TextView questionText = ViewBindings.findChildViewById(rootView, id);
+      if (questionText == null) {
+        break missingId;
+      }
+
+      id = R.id.score;
+      TextView score = ViewBindings.findChildViewById(rootView, id);
+      if (score == null) {
         break missingId;
       }
 
@@ -221,10 +218,22 @@ public final class ActivityChallengeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChallengeBinding((ConstraintLayout) rootView, flagImage, flagImageView,
-          headerText, headerTimer, option1Button, option1Result, option2Button, option2Result,
-          option3Button, option3Result, option4Button, option4Result, options, questionNumberText,
-          textView, timerTextView);
+      id = R.id.titleText;
+      TextView titleText = ViewBindings.findChildViewById(rootView, id);
+      if (titleText == null) {
+        break missingId;
+      }
+
+      id = R.id.topBar;
+      View topBar = ViewBindings.findChildViewById(rootView, id);
+      if (topBar == null) {
+        break missingId;
+      }
+
+      return new ActivityChallengeBinding((ConstraintLayout) rootView, flagImageView, gameOver,
+          option1Button, option1Result, option2Button, option2Result, option3Button, option3Result,
+          option4Button, option4Result, options, questionNumberText, questionText, score,
+          timerTextView, titleText, topBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

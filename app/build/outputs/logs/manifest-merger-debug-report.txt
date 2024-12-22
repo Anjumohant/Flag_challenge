@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.databinding:viewbinding:8.5.0] C:\Users\HP\.gradle\caches\transforms-4\b7301767150d1fcfcb1507621244aad4\transformed\viewbinding-8.5.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.5] C:\Users\HP\.gradle\caches\transforms-4\625e8c9280ad9b9f7eb591ffcf894976\transformed\navigation-common-2.8.5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] C:\Users\HP\.gradle\caches\transforms-4\dd3a63dcc10f4223f874daa464cc83d0\transformed\navigation-common-ktx-2.8.5\AndroidManifest.xml:2:1-7:12
@@ -74,8 +74,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\HP\.gra
 	xmlns:android
 		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:5:5-35:19
-INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:5:5-35:19
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:5:5-37:19
+INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:5:5-37:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\HP\.gradle\caches\transforms-4\a074c1685fb94c8a04a8ba3aca419078\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\HP\.gradle\caches\transforms-4\a074c1685fb94c8a04a8ba3aca419078\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\HP\.gradle\caches\transforms-4\61780a2b1a8ce011e52e0b5f51da940b\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -117,41 +117,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HP
 	android:dataExtractionRules
 		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:7:9-65
 activity#com.example.flags_challenge.ui.challenge.ChallengeActivity
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:15:9-17:40
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:exported
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:17:13-37
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
 		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:16:13-59
-activity#com.example.flags_challenge.ui.time_picker.Schedule_TimerActivity
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:18:9-20:40
-	android:exported
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:20:13-37
-	android:name
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:19:13-66
-activity#com.example.flags_challenge.ui.common.SplashActivity
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:22:9-31:20
-	android:exported
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:24:13-36
-	android:theme
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:25:13-44
-	android:name
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:23:13-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:18:9-22:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:19:13-65
 	android:name
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:19:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:21:13-73
 	android:name
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:29:27-74
-activity#com.example.flags_challenge.ui.time_picker.TimePickerActivity
-ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:32:9-34:40
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:21:23-70
+activity#com.example.flags_challenge.ui.time_picker.Schedule_TimerActivity
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:33:13-62
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:25:13-66
+activity#com.example.flags_challenge.ui.common.SplashActivity
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:28:9-33:20
+	android:exported
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:31:13-44
+	android:name
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:29:13-53
+activity#com.example.flags_challenge.ui.time_picker.TimePickerActivity
+ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml:35:13-62
 uses-sdk
 INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\HP\AndroidStudioProjects\Flags_Challenge\app\src\main\AndroidManifest.xml
